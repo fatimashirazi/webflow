@@ -1,0 +1,144 @@
+@import url(customizations.css);
+:root {
+    --color-bg-main: #28293c;
+    --color-bg-secondary: #fbf0ea;
+    --color-orange: #ef6d58;
+    --color-orange-light: #f2b0a6;
+    --color-pink: #b550f8;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epilogue", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    background-color: var(--color-bg-main);
+    color: white;
+}
+.btn {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+}
+.btn-primary {
+    background-color: var(--color-bg-main);
+    color: white;
+    border: white 1px solid;
+}
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+.hero-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-orange {
+    color: var(--color-orange);
+}
+.bg-orange {
+    background-color: var(--color-orange);
+}
+.bg-main-color {
+    background-color: var(--color-bg-main);
+}
+.bg-secondary-color {
+    background-color: var(--color-bg-secondary);
+}
+.btn-orange {
+    background-color: var(--color-orange);
+    color: white;
+}
+.btn-pink {
+    background-color: var(--color-pink);
+    color: white;
+}
+.border-orange-elements > div {
+    border: 0.5px solid var(--color-orange);
+}
+.border-orange-light-elements > div {
+    border: 0.5px solid var(--color-orange-light);
+}
+.border-secondary-elements > div {
+    border: 0.5px solid var(--color-bg-secondary);
+}
+.row-cols-rounded > div:first-child {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.row-cols-rounded > div:last-child {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+@media (max-width: 767px) {
+    .row-cols-rounded > div:first-child {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .row-cols-rounded > div:last-child {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
+.icon-holder {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.service-section {
+    margin-bottom: -100px;
+}
+.video-reel-section {
+    padding-top: 250px;
+}
+@media (max-width: 767px) {
+    .service-section {
+        margin-bottom: -800px;
+    }
+    .video-reel-section {
+        padding-top: 950px;
+    }
+}
+.video-thumbnail {
+    min-width: 100%;
+    min-height: 360px;
+    background: url(../images/video-thumbnail.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width: 767px) {
+    .video-thumbnail {
+        min-height: 200px;
+    }
+}
+.awards-list > div:first-child {
+    border-top: 1px solid #f3d1bf;
+}
+.awards-list > div {
+    border-bottom: 1px solid #f3d1bf;
+}
+.absolute-star {
+    transform: translateY(-140%);
+}
+@media (max-width: 767px) {
+    .absolute-star {
+        transform: translateY(-100%);
+    }
+}
+/* .testimonial-card {
+    width: 50%;
+    border-top: 0.5px solid var(--color-orange-light);
+    border-left: 0.5px solid var(--color-orange-light);
+}
+@media (max-width: 767px) {
+    .testimonial-card {
+        width: 100%;
+    }
+} */

@@ -1,0 +1,50 @@
+/* Accordian Bootstrap Override */
+.accordion {
+    --bs-accordion-btn-active-icon: none;
+}
+.accordion-header > button {
+    border-bottom: none;
+    padding: 2rem;
+    background-color: white;
+    font-weight: bold;
+    color: inherit !important;
+}
+.accordion-header ::after {
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    border-bottom: none;
+    box-shadow: none;
+}
+button.accordion-button.collapsed {
+    background-color: var(--color-bg-secondary);
+}
+.accordion-button::after {
+    background-color: #ef6d58;
+    background-image: none;
+    transform: translate();
+    border-radius: 50%;
+    content: url(../images/icon_up.png) !important;
+    margin-right: 1px;
+}
+.accordion-button.collapsed::after {
+    background-image: none;
+}
+
+/* Form components overrides */
+.form-control,
+.form-select {
+    box-shadow: none !important;
+}
+.form-control:focus,
+.form-select:focus {
+    border-color: unset;
+}
